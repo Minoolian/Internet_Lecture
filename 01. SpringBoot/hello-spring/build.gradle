@@ -9,7 +9,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 repositories {
-	mavenCentral()
+	mavenCentral() // 공개된 사이트에서 의존성들을 받아온다.
 }
 
 dependencies {
