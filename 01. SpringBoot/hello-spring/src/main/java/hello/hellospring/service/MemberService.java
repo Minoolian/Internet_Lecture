@@ -10,7 +10,12 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+        // 의존성주입
+        this.memberRepository = memberRepository;
+    }
 
     /**
      * 회원가입
