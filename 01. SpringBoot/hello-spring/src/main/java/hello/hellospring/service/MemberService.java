@@ -10,12 +10,10 @@ import javax.swing.text.html.Option;
 import java.util.List;
 import java.util.Optional;
 
-@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
     public MemberService(MemberRepository memberRepository) {
         // 의존성주입
         this.memberRepository = memberRepository;
