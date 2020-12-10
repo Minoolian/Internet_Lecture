@@ -1,5 +1,6 @@
 package hello.hellospring;
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.JpaMemberRepository;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
@@ -24,6 +25,11 @@ public class SpringConfig {
     public MemberService memberService(){
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop(){
+//        return new TimeTraceAop();
+//    } // Bean으로 등록해서 사용해도 되지만, Component Scan을 사용해도 된다.
 
 //    @Bean
 //    public MemberRepository memberRepository() {
